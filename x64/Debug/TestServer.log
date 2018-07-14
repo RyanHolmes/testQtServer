@@ -1,17 +1,21 @@
-﻿Build started 7/14/2018 4:05:35 PM.
-     1>Project "C:\Users\Ryan\documents\visual studio 2012\Projects\TestServer\TestServer\TestServer.vcxproj" on node 2 (Build target(s)).
+﻿Build started 7/14/2018 7:30:49 PM.
+     1>Project "C:\Users\Ryan\Documents\Visual Studio 2012\Projects\TestServer\TestServer\TestServer.vcxproj" on node 2 (Build target(s)).
      1>CustomBuild:
          Moc'ing main_window.h
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\Ryan\documents\visual studio 2012\Projects\TestServer\TestServer\\Include" /IC:\Qt\5.2.1\msvc2012_64\include /IC:\Qt\5.2.1\msvc2012_64\include\QtCore /IC:\Qt\5.2.1\msvc2012_64\include\QtNetwork /IC:\Qt\5.2.1\msvc2012_64\include\QtWidgets /IC:\Qt\5.2.1\msvc2012_64\include\QtGui /IC:\Qt\5.2.1\msvc2012_64\include\QtANGLE /IC:\boost_1_65_0\boost /Zi /nologo /W3 /WX- /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\moc_main_window.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\Ryan\Documents\Visual Studio 2012\Projects\TestServer\TestServer\\Include" /IC:\Qt\5.2.1\msvc2012_64\include /IC:\Qt\5.2.1\msvc2012_64\include\QtCore /IC:\Qt\5.2.1\msvc2012_64\include\QtNetwork /IC:\Qt\5.2.1\msvc2012_64\include\QtWidgets /IC:\Qt\5.2.1\msvc2012_64\include\QtGui /IC:\Qt\5.2.1\msvc2012_64\include\QtANGLE /IC:\boost_1_65_0\boost /Zi /nologo /W3 /WX- /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\moc_main_window.cpp Source\main.cpp Source\main_window.cpp
+         main.cpp
          moc_main_window.cpp
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         main_window.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Ryan\documents\visual studio 2012\Projects\TestServer\TestServer\x64\Debug\TestServer.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Qt\5.2.1\msvc2012_64\bin /LIBPATH:C:\Qt\5.2.1\msvc2012_64\lib /LIBPATH:C:\boost_1_65_0\libs Qt5Cored.lib Qt5Networkd.lib Qt5Widgetsd.lib Qt5Guid.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Ryan\documents\visual studio 2012\Projects\TestServer\TestServer\x64\Debug\TestServer.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Ryan\documents\visual studio 2012\Projects\TestServer\TestServer\x64\Debug\TestServer.lib" /MACHINE:X64 x64\Debug\moc_main_window.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Ryan\Documents\Visual Studio 2012\Projects\TestServer\TestServer\x64\Debug\TestServer.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Qt\5.2.1\msvc2012_64\bin /LIBPATH:C:\Qt\5.2.1\msvc2012_64\lib /LIBPATH:C:\boost_1_65_0\libs Qt5Cored.lib Qt5Networkd.lib Qt5Widgetsd.lib Qt5Guid.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Ryan\Documents\Visual Studio 2012\Projects\TestServer\TestServer\x64\Debug\TestServer.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Ryan\Documents\Visual Studio 2012\Projects\TestServer\TestServer\x64\Debug\TestServer.lib" /MACHINE:X64 x64\Debug\moc_main_window.obj
          x64\Debug\main.obj
          x64\Debug\main_window.obj
-         TestServer.vcxproj -> C:\Users\Ryan\documents\visual studio 2012\Projects\TestServer\TestServer\x64\Debug\TestServer.exe
-     1>Done Building Project "C:\Users\Ryan\documents\visual studio 2012\Projects\TestServer\TestServer\TestServer.vcxproj" (Build target(s)).
+         TestServer.vcxproj -> C:\Users\Ryan\Documents\Visual Studio 2012\Projects\TestServer\TestServer\x64\Debug\TestServer.exe
+     1>Done Building Project "C:\Users\Ryan\Documents\Visual Studio 2012\Projects\TestServer\TestServer\TestServer.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:05.13
+Time Elapsed 00:00:07.41
