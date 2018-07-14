@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\moc_main_window.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\main_window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Include\main_window.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing main_window.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)\GeneratedFiles</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\5.2.1\msvc2012_64\bin\moc.exe "$(ProjectDir)\Include\main_window.h" -o "$(ProjectDir)\GeneratedFiles\moc_main_window.cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\5.2.1\msvc2012_64\bin\moc.exe</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{314FD745-28A5-456B-9319-824F983821D6}</ProjectGuid>
     <RootNamespace>TestServer</RootNamespace>
@@ -65,7 +78,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -79,11 +94,11 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Qt\5.2.1\msvc2012_64\include;C:\Qt\5.2.1\msvc2012_64\include\QtCore;C:\Qt\5.2.1\msvc2012_64\include\QtNetwork;C:\Qt\5.2.1\msvc2012_64\include\QtWidgets;C:\Qt\5.2.1\msvc2012_64\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Include;C:\Qt\5.2.1\msvc2012_64\include;C:\Qt\5.2.1\msvc2012_64\include\QtCore;C:\Qt\5.2.1\msvc2012_64\include\QtNetwork;C:\Qt\5.2.1\msvc2012_64\include\QtWidgets;C:\Qt\5.2.1\msvc2012_64\include\QtGui;C:\Qt\5.2.1\msvc2012_64\include\QtANGLE;C:\boost_1_65_0\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Qt\5.2.1\msvc2012_64\bin; C:\Qt\5.2.1\msvc2012_64\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Qt\5.2.1\msvc2012_64\bin;C:\Qt\5.2.1\msvc2012_64\lib;C:\boost_1_65_0\libs</AdditionalLibraryDirectories>
       <AdditionalDependencies>Qt5Core.lib;Qt5Network.lib;Qt5Widgets.lib;Qt5Gui.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -113,9 +128,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
